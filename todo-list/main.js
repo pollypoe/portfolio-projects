@@ -25,7 +25,6 @@ images[20] = 'images/image21.jpg';
 images[21] = 'images/image22.jpg';
 images[22] = 'images/image23.jpg';
 images[23] = 'images/image24.jpg';
-images[24] = 'images/image25.jpg';
 
 window.onload = function() {
 	const random = Math.floor(Math.random()* images.length);
