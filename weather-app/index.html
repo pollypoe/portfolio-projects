@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="app-wrap">
+            <h1>Weather App</h1>
+            <header>
+                <input type="text" autocomplete="off" class="search-box"
+                placeholder="Seattle, US"/>
+            </header>
+            <main>
+                <section class="location">
+                    <div class="city">Seattle, US</div>
+                    <div class="date">Thrusday 5 May 2022</div>
+                </section>
+                <div class="weather-icon">
+                    <img src="icons/unknown.png" alt="weather icon">
+                </div>
+                <div class="current">
+                    <div class="temp" id="temp">60<span>&deg;F</span></div>
+                    <div class="weather">Sunny</div>
+                    <div class="hi-low" id="hi-low">54&deg;F / 62&deg;F</div>
+                </div>
+                  <button type="button" id="switch">Convert Temperature</button>
+            </main>
+        </div>
+            <script src="main.js"></script>
+    </body>
+</html>
