@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=PT+Serif&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(imgBg.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 14px;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: absolute;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    height:600px;
+    opacity: 0.9;
+}
+
+.form-container form {
+    background: rgba(45, 52, 54, 1.0);
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social-container {
+    margin: 20px 0;
+}
+
+.social-container a {
+    border: none;
+    background: linear-gradient(-45deg, #9925ea, #338aff, #9925ea);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    background-size: 400%;
+    background-position: 90% 0;
+    transition: background 0.8s;
+}
+
+
+.form-container input {
+    background: #fff;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+}
+
+button {
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: linear-gradient(-45deg, #9925ea, #338aff, #9925ea);
+    background-size: 400%;
+    background-position: 90% 0;
+    color: #fff;
+    transition: background 0.8s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover, .social-container a:hover {
+    background-position: 185% 50%;
+}
+
+input[type=text] {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    font-family: 'PLay', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type=text]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+}
+    
+input[type=text]:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+    
+input[type=text]:focus:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+    border-radius:0;
+} 
+
+input[type=password] {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    font-family: 'PLay', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type=password]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border: 1px solid #5AB0DB;
+}
+    
+input[type=password]:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+    
+input[type=password]:focus:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+    border-radius:0;
+} 
+
+input[type=email] {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border: 1px solid #fff;
+    font-family: 'PLay', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+input[type=email]:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border: 1px solid #5AB0DB;
+}
+    
+input[type=email]:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+    
+input[type=email]:focus:hover {
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border:1px solid #5AB0DB;
+    border-radius:0;
+} 
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.sign-up-container {
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 12px;
+    height: 16px;
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.overlay {
+    background: transparent;
+    color: #fff;
+    position: absolute;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.overlay-left {
+    transform: translateX(-20%);
+}
+
+/*....Move signin to the right....*/
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+/*....Move overlay to the left....*/
+.container.right-panel-active .overlay-container {
+    transform: translateX(-100%);
+}
+
+/*....Bring sign up over sign in....*/
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+}
+
+/*...Move overlay back to right....*/
+.container.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.container.right-panel-active .overlay-left {
+    transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+    transform: translateX(20%);
+}
+
+@media (max-width: 756px) {
+    .sign-up-container button {
+        padding: 12px 42px;
+    }
+}
