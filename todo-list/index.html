@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Task List</title>
+</head>
+<body>
+	<div class="overlay">
+	<header>
+		<h1 class="title text-center display-2">Task List</h1>
+        <p class="lead text-center">Welcome to organizing your life</p>
+	</header>
+		<main class="app">
+			<section class="create-todo">
+				<form id="new-todo-form">
+					<input 
+						type="text" 
+						placeholder="e.g. Get ice cream"
+						name="content"
+						id="content new-task-input" />
+					<input type="submit" value="Add task" id="new-task-input" />
+				</form>
+			</section>
+			<section class="todo-list">
+				<div class="list" id="todo-list"></div>
+			</section>	
+		</main>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
